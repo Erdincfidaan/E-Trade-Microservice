@@ -47,35 +47,8 @@ Benefits of this approach include:
 
 ## System Architecture
 
-```text
-                                ┌─────────────────┐
-                                │     Clients     │
-                                └────────┬────────┘
-                                         │
-                                         ▼
-                        ┌─────────────────────────────────┐
-                        │      Ocelot API Gateway         │
-                        │      localhost:5000            │
-                        └──────────────┬──────────────────┘
-                                       │
-     ┌──────────────┬──────────────────┼─────────────────┬──────────────┬──────────────┐
-     ▼              ▼                  ▼                 ▼              ▼
-┌──────────┐   ┌──────────┐      ┌──────────┐      ┌──────────┐   ┌──────────┐
-│ Catalog  │   │ Basket   │      │ Order    │      │ Cargo    │   │ Discount │
-│ Service  │   │ Service  │      │ Service  │      │ Service  │   │ Service  │
-└──────────┘   └──────────┘      └──────────┘      └──────────┘   └──────────┘
-       │              │                 │                 │               │
-       ▼              ▼                 ▼                 ▼               ▼
-   MongoDB         Redis           SQL Server       SQL Server      SQL Server
+<img width="1438" height="864" alt="image" src="https://github.com/user-attachments/assets/dad352ca-1e94-47cb-a0b5-bfa33cea2698" />
 
-                                       │
-                                       ▼
-
-                              ┌────────────────┐
-                              │ Identity       │
-                              │ Service        │
-                              └────────────────┘
-```
 
 All client requests enter the system through the API Gateway, which forwards requests to the appropriate microservice.
 
