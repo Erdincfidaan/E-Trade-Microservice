@@ -1,0 +1,17 @@
+﻿using MediatR;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ETrade.Order.Application.Features.Mediator.Command
+{
+    public class CreateOrderingCommand:IRequest
+    {
+        
+        public string UserId { get; set; }
+        public decimal TotalPrice { get; set; }
+        public DateTime OrderDate { get; set; }
+    }
+}

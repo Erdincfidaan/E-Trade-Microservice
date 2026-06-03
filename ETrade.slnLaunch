@@ -1,0 +1,23 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "Identity\\Identity.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Services\\Catalog\\ETrade.Catalog\\ETrade.Catalog.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "APIGateway\\ETrade.OcelotGateway\\ETrade.OcelotGateway.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "..\\..\\..\\Desktop\\ETrade.WebUI\\ETrade.WebUI.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

@@ -1,0 +1,61 @@
+# Build
+bin/
+obj/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Rider
+.idea/
+
+# VS Code
+.vscode/
+
+# Logs
+*.log
+
+# NuGet
+packages/
+*.nupkg
+
+# Publish
+publish/
+
+# Environment Files
+.env
+.env.*
+
+# ASP.NET User Secrets
+secrets.json
+
+# Development Settings
+appsettings.Development.json
+
+# Test Results
+TestResults/
+
+# SQL Server LocalDB
+*.mdf
+*.ldf
+
+# Coverage Reports
+coverage/
+coverage-report/
+
+# ReSharper
+_ReSharper*/
+*.DotSettings.user
+
+# OS Files
+Thumbs.db
+Desktop.ini
+
+# MongoDB Dumps
+dump/
+
+# Redis
+dump.rdb
